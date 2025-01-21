@@ -39,19 +39,10 @@ pfserver.listen(PORT,()=>{
 })
 
 
-
-
-
-
-
-
-
-
-
-// // get 
-// pfserver.get('/',(req, res)=>{
-//     res.send(`get request received`)
-// })
+// get 
+pfserver.get('/',(req, res)=>{
+    res.send(`get request received`)
+})
 
 // // send
 // pfserver.post('/',(req, res)=>{
