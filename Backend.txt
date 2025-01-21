@@ -1,0 +1,153 @@
+NODE AND EXPRESS
+--------------------
+
+MVC Architecture
+-----------------
+- MVC is basically used for create a full stack project/application
+
+M -> Model - represent the structure in which type the data is stored.
+V -> View - user interface - where the user interact with application
+C -> Controller - use to set the logic to resolve the request
+
+Routing - to set the path to resolve the request.(To chanalize the request coming the server side)
+
+DataBase - Where the data is stored.
+
+
+NODE
+----------
+- Not a programming language
+- it provides a environment to run the JavaScript outside the browser
+- V8 JavaScript Engine - Google
+- JavaScript Libraries .
+- Extension - .js
+
+Installation
+--------------
+Features - single tread programming language
+
+Node Modules
+-----------------
+- Node Modules are files/JavaScript Libraries that can be used in node.js application to provide certain functionalities.
+- if we want to include Module, we need to import that Module.
+- requrire() - used to import Modules.
+- module.export - to export the module.
+
+Type of Modules
+-------------------
+1). Custome Module :
+2). Builtin Module :
+    a). Filesystem Modules
+        ---------------------
+        - allows to work with the files inside your system
+        operations
+        ===========
+        - read file : readFile()
+        - write file : writeFile()
+        - update - writeFile()
+        - delete file : unlink()
+        - Rename file - rename()
+
+utf8 - unicode transformation format - 8bit // encode - to remove the buffer
+
+    b). Http Modules
+    -------------------
+    - used to create http server that can listen to a server port and gives a response back to a client.
+    - handle http request
+    - create - createServer()
+    - Listen - listen()
+
+    c). Https Modules
+    -----------------
+    - more secure transmission
+
+    d). Event Modules
+    -----------------
+    - to create events
+    - can create with the help of EventEmmitter class
+    - on() - to create events
+    - emit() - to invoke the events
+
+
+Environment variables
+-----------------------
+- pre defined values that are typically used to provide the ability to configure a value in your code from outside the application.
+eg:- fontoawsome linking,bootstrap etc.
+
+EXPRESS
+----------
+- its a node.js frame work
+
+steps to create /setup a server using EXPRESS
+    1). create a folder for server
+    2). create package.json - npm init -y
+    3). install packages
+        - Express - npm i express 
+        - dotenv - npm i dotenv
+        - cors - npm i cors
+        - mongoose - npm i mongoose
+        or 
+        npm i express dotenv cors mongoose
+    4). Add file .gitignore - 
+
+
+cors - cross origin resource sharing
+---------------------------------------
+- to connect frontend with the server to enable communication
+
+
+dotenv
+----------
+- to load environment variables
+- load .env file contents in to process.env by default (process.env is an object)
+- config() - (.env use chyyan ulla method)
+
+
+mongoose
+---------
+- to connect server with DataBase
+- connect() - (use cheyyan ulla method)
+
+----------------------------------------------------------------------------------------------------------------------
+
+MiddleWare
+------------
+- its a function which have the ability to break req-res cycle
+- appart from another function MiddleWare must have 3 arguments
+1arg = request
+2arg = response
+3arg = next
+
+- there are 2 types of MiddleWare
+        1).Application Specific MiddleWare
+                - all the request in the application must pass throuh the MiddleWare
+        2).Router Specific MiddleWare
+                - will be only active in a perticular route/path
+
+
+key attribute
+-------------
+- when a value of key attribute changes onchange events calls / invoke
+
+iat :-()
+------
+ time at which token is generated
+
+Multer
+---------
+Multer is a node.js middleware for handling multipart/form-data, which is primarily used for uploading files.
+
+express.static
+------------------
+- export a perticular folder from the server side .
+
+context Share
+--------------
+- for data sharing between components 
+- and part of react 
+- steps to use context Share
+    1. create a component
+    2. wrap app inside context component
+    3. create context in the component - createContext()
+    4. create data to share by using this context
+    5. using provider tag and childern props share the data with other components
